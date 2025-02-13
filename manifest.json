@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Transcript to ChatGPT",
+  "version": "1.0",
+  "description": "Extracts a YouTube video transcript (without timestamps), copies it to the clipboard, and sends it to ChatGPT.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://chatgpt.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Send Transcript to ChatGPT",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
